@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label 'nodus-bizarus'
+    }
     
     parameters {
         booleanParam(
